@@ -25,14 +25,14 @@ void setup()  // fungsi yang dijalankan sekali untuk persiapan
 
 void loop()  // fungsi yang dijalankan terus menerus infinite loop
 { 
-  // menuju ke sudut 180 derajat
+  // menuju ke sudut 180 dari 0 derajat
   for(pos = 0; pos < 180; pos += 1)
   {
     servoSaya.write(pos);
     delay(15);
   }
 
-  // kembali ke sudut 0 derajat 
+  // kembali dari 180 ke sudut 0 derajat 
   for(pos = 180; pos > 0; pos -= 1)
   {
     servoSaya.write(pos);
